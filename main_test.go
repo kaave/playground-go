@@ -9,6 +9,8 @@ import (
 )
 
 func TestAdd(t *testing.T) {
-	assert.Equal(t, add(1, 2), 3)
+	assert := assert.New(t)
+
+	assert.Equal(add(1, 2), 3)
 	// assert.Equal(t, add(-1, 2), 3)
 }
